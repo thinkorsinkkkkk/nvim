@@ -3,6 +3,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
+Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'preservim/tagbar'
 Plug 'nanotech/jellybeans.vim'
@@ -21,6 +22,8 @@ vim.cmd [[set tabstop=4]]
 vim.cmd [[set shiftwidth=4]]
 vim.cmd [[set softtabstop=4]]
 vim.cmd [[set expandtab]]
+
+vim.cmd [[nnoremap <C-n> :NERDTree<CR>]]
 
 vim.cmd [[set clipboard=unnamedplus]]
 
